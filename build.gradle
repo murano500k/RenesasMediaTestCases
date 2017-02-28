@@ -1,0 +1,67 @@
+
+buildscript {
+    allprojects {
+        repositories {
+            maven { url 'http://repo1.maven.org/maven2' }
+            mavenCentral()
+            jcenter()
+        }
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.2'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "android.renesas.cts"
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    sourceSets {
+        androidTest {
+            java.srcDirs = ['src']
+        }
+        main {
+            java.srcDirs = ['src/android/renesas/cts/MainActivity.java']
+            manifest.srcFile 'AndroidManifest.xml'
+            res.srcDirs = ['res']
+        }
+    }
+
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile 'junit:junit:4.12'//remove this line and sync again... worked for me
+    androidTestCompile 'com.google.guava:guava:18.0'
+    androidTestCompile 'com.android.support:appcompat-v7:25.0.0'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestCompile 'com.android.support:support-annotations:25.0.0'
+    androidTestCompile 'com.android.support.test:runner:0.4'
+    androidTestCompile 'com.android.support.test:rules:0.4'
+
+    compile 'junit:junit:4.12'//remove this line and sync again... worked for me
+    compile 'com.google.guava:guava:18.0'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:support-annotations:25.0.0'
+    compile 'com.android.support.test:runner:0.4'
+    androidTestCompile 'com.android.support.test:rules:0.4'
+}
