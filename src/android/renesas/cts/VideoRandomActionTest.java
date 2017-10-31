@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
  * Created by artem on 12/2/16.
  */
 @RunWith(AndroidJUnit4.class)
-public class VideoTest extends BaseMediaTest {
+public class VideoRandomActionTest extends BaseMediaTest {
 	@Before
 	public void prepare(){
 		isVideo=true;
@@ -18,42 +18,42 @@ public class VideoTest extends BaseMediaTest {
 
 	@Test
 	public void testH263AV001248(){
-		testMedia(h263AV001248);
+		testMediaRandomAction(h263AV001248);
 	}
 
 	@Test
 	public void testH264AV000869(){
-		testMedia(h264AV000869);
+		testMediaRandomAction(h264AV000869);
 	}
 
 	@Test
 	public void testH264AV001097(){
-		testMedia(h264AV001097);
+		testMediaRandomAction(h264AV001097);
 	}
 
 	@Test
 	public void testH264AV001187(){
-		testMedia(h264AV001187);
+		testMediaRandomAction(h264AV001187);
 	}
 
 	@Test
 	public void testH265AV001429(){
-		testMedia(h265AV001429);
+		testMediaRandomAction(h265AV001429);
 	}
 
 	@Test
 	public void testH265AV001430(){
-		testMedia(h265AV001430);
+		testMediaRandomAction(h265AV001430);
 	}
 
 	@Test
 	public void testH265AV001431(){
-		testMedia(h265AV001431);
+		testMediaRandomAction(h265AV001431);
 	}
 
 	@Test
 	public void testMPEG4AV000022(){
-		testMedia(mpeg4AV000022);
+		testMediaRandomAction(mpeg4AV000022);
 	}
 /*
 

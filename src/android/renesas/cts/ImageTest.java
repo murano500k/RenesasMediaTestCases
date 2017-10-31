@@ -12,47 +12,43 @@ import org.junit.runner.RunWith;
 public class ImageTest extends BaseMediaTest{
 
 	@Test
-	public void testJpeg1(){
-		testImage(jpg1);
+	public void testJpegI000287(){
+		testImage(jpgI000287);
 	}
 	@Test
-	public void testJpeg2(){
-		testImage(jpg2);
+	public void testJpegI000309(){
+		testImage(jpgI000309);
 	}
 	@Test
-	public void testJpeg3(){
-		testImage(jpg3);
+	public void testJpegI000310(){
+		testImage(jpgI000310);
 	}
 	@Test
-	public void testJpeg4(){
-		testImage(jpg4);
+	public void testJpegI000311(){
+		testImage(jpgI000311);
 	}
 	@Test
-	public void testJpeg5(){
-		testImage(jpg5);
+	public void testJpegI000001(){
+		testImage(jpgI000001);
 	}
 	@Test
-	public void testPng1(){
-		testImage(png1);
+	public void testPngI000301(){
+		testImage(pngI000301);
 	}
 	@Test
-	public void testPng2(){
-		testImage(png2);
+	public void testPngI000313(){
+		testImage(pngI000313);
 	}
 	@Test
-	public void testWebp1(){
-		testImage(webp1);
+	public void testWebpI000308(){
+		testImage(webpI000308);
 	}
 	@Test
-	public void testGif1(){
-		testImage(gif1);
+	public void testGifI000021(){
+		testImage(gifI000021);
 	}
 	@Test
-	public void testBmp1(){
-		testImage(bmp1);
-	}
-	@Test
-	public void testBmp2(){
-		testImage(bmp2);
+	public void testBmpI000312(){
+		testImage(bmpI000312);
 	}
 }
